@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Freelancer Dashboard | Skill Marketplace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Sacramento&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      font-family: 'Sacramento', cursive;
+    }
+
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+    /* Header */
+    .header {
+      background-color: #ff6b6b;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .header h1 {
+      font-size: 4rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .header p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      animation: fadeInText 3s ease-in-out;
+    }
+
+    .cta-button {
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      background-color: #4facfe;
+      color: white;
+      border-radius: 30px;
+      margin-top: 20px;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.1);
+      background-color: #00f2fe;
+    }
+
+    /* Dashboard Section */
+    .dashboard {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .dashboard .card {
+      background: white;
+      padding: 30px;
+      width: 48%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .dashboard .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      font-size: 2rem;
+      color: #ff6b6b;
+      margin-bottom: 20px;
+    }
+
+    .card p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: #ff6b6b;
+      color: white;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+
+    .card a:hover {
+      background-color: #ff7675;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInText {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>Freelancer Dashboard</h1>
+    <p>Manage your freelance projects, track earnings, and grow your skills</p>
+    <a href="/profile-settings" class="cta-button">Go to Profile</a>
+  </header>
+
+  <!-- Dashboard Section -->
+  <div class="container">
+    <div class="dashboard">
+      <!-- Earnings & Payments Card -->
+      <div class="card">
+        <h3>Your Earnings</h3>
+        <p>Track your earnings, view upcoming payments, and manage your financials.</p>
+        <a href="/freelancer-dashboard">View Earnings</a>
+      </div>
+      <!-- Skill Opportunities Card -->
+      <div class="card">
+        <h3>Explore Opportunities</h3>
+        <p>Find new job opportunities, connect with clients, and grow your skill set.</p>
+        <a href="/freelancer-dashboard">Find Jobs</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

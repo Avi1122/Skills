@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Skill Marketplace</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome Icons -->
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f9fc;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: #4facfe;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: #ff6b6b;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    /* Hero Section */
+    .hero-small {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .hero-small h1 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      animation: slideInFromTop 1s ease-in-out;
+    }
+
+    .hero-quote {
+      font-size: 1.3rem;
+      font-style: italic;
+      animation: fadeInText 1.5s ease-in-out;
+    }
+
+    /* Main Content */
+    .form-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 60px 40px;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+      max-width: 1200px;
+      margin: 60px auto;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Left Form Section */
+    .form-content {
+      flex: 1;
+      padding-right: 30px;
+      animation: slideInFromLeft 1s ease-in-out;
+    }
+
+    .form-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    input, select, button {
+      padding: 12px 15px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 2px solid #ddd;
+      transition: all 0.3s ease-in-out;
+    }
+
+    input:focus, select:focus {
+      outline: none;
+      border-color: #4facfe;
+      box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+    }
+
+    button {
+      background-color: #ff7675;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ff6b6b;
+      transform: scale(1.05);
+    }
+
+    .text-small {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    .text-small a {
+      color: #4facfe;
+    }
+
+    /* Right Side Panel */
+    .side-content {
+      flex: 1;
+      background: linear-gradient(135deg, #ff6b6b, #ff7675);
+      color: white;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      animation: slideInFromRight 1s ease-in-out;
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .side-content i {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .side-content i:hover {
+      transform: scale(1.1);
+      color: #fff;
+    }
+
+    .side-content p {
+      font-size: 1.2rem;
+      text-align: center;
+      color: #fff;
+      line-height: 1.5;
+      opacity: 0;
+      animation: fadeInText 2s ease-in-out forwards;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInText {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideInFromTop {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideInFromRight {
+      0% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #4facfe;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero-small">
+    <h1>Welcome Back!</h1>
+    <p class="hero-quote">"Let's continue your journey to learn, grow, and earn."</p>
+  </header>
+
+  <main class="form-container">
+    <!-- Left Form Section -->
+    <div class="form-content">
+      <h2 class="form-title">Login to Your Account</h2>
+      <form action="dashboard.html" method="POST" class="animate-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p class="text-small">Don't have an account? <a href="register.html">Register here</a></p>
+      <p class="text-small"><a href="forgot-password.html">Forgot your password?</a></p>
+    </div>
+
+    <!-- Right Side Panel -->
+    <div class="side-content">
+      <i class="fas fa-lightbulb"></i>
+      <p>Unlock new skills, enhance your career, and connect with experts in your field. The marketplace awaits!</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2024 Skill Marketplace. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
