@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Skill Marketplace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3 {
+      text-align: center;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      font-style: italic;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      margin: 10px;
+      display: inline-block;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background-color: #ff7675;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #ff6b6b;
+      transform: scale(1.1);
+    }
+
+    .btn-secondary {
+      background-color: #fff;
+      color: #4facfe;
+      border: 2px solid #4facfe;
+    }
+
+    .btn-secondary:hover {
+      background-color: #e3f2fd;
+      transform: scale(1.1);
+    }
+
+    /* Features Section */
+    .features-section {
+      padding: 50px 20px;
+      background-color: #fff;
+      color: #333;
+      text-align: center;
+    }
+
+    .features-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .feature-card {
+      background: #fff;
+      border: 2px solid #f1f1f1;
+      border-radius: 12px;
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature-card img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .feature-card a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #4facfe;
+    }
+
+    .feature-card a:hover {
+      color: #ff6b6b;
+    }
+
+    /* Testimonials Section */
+    .testimonials-section {
+      background-color: #f4f9fc;
+      color: #333;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .testimonials-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    blockquote {
+      font-style: italic;
+      padding: 20px;
+      background: #fff;
+      border-left: 4px solid #4facfe;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 300px;
+    }
+
+    blockquote footer {
+      margin-top: 10px;
+      text-align: right;
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #4facfe;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="container">
+      <h1 class="hero-title">Discover Skills. Empower Growth.</h1>
+      <p class="hero-subtitle">Join the ultimate platform to learn, grow, and monetize skills.</p>
+      <a href="register.html" class="btn-primary">Join Now</a>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section">
+    <h2 class="section-title">Key Features</h2>
+    <div class="features-container">
+      <!-- Explore Skills -->
+      <div class="feature-card">
+        <a href="client-dashboard.html">
+          <img src="images/explore-skills.jpg" alt="Explore Skills">
+          <h3>Explore Skills</h3>
+          <p>Browse and book from a wide range of professional and personal skills.</p>
+        </a>
+      </div>
+
+      <!-- Offer Skills -->
+      <div class="feature-card">
+        <a href="freelancer-dashboard.html">
+          <img src="images/offer-skills.jpg" alt="Offer Skills">
+          <h3>Offer Your Skills</h3>
+          <p>Share your expertise, teach, and earn on our platform.</p>
+        </a>
+      </div>
+
+      <!-- Dashboard -->
+      <div class="feature-card">
+        <a href="personal-dashboard.html">
+          <img src="images/personal-dashboard.jpg" alt="Dashboard">
+          <h3>Personal Dashboard</h3>
+          <p>Track bookings, manage earnings, and stay organized.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials-section">
+    <h2 class="section-title">What Our Users Say</h2>
+    <div class="testimonials-container">
+      <blockquote>
+        <p>"This platform has transformed the way I learn new skills. It's easy to use and incredibly effective."</p>
+        <footer>- Akshay Gadekar</footer>
+      </blockquote>
+      <blockquote>
+        <p>"I’ve been able to earn consistently by offering my graphic design skills. Highly recommend!"</p>
+        <footer>- Vishnu Chadidar</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Skill Marketplace. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
